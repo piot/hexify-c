@@ -1,0 +1,7 @@
+.idea
+cmake-build-*/
+deps/
+*.a
+cmake_install.cmake
+CTestTestfile.cmake
+CMakeFiles/
