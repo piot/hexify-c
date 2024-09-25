@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install LLVM and Clang 16
         uses: KyleMayes/install-llvm-action@v2
@@ -37,7 +37,7 @@ jobs:
       - name: test
         run: ctest --verbose
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: hexify Linux Library
           path: |
