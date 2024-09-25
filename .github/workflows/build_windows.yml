@@ -20,7 +20,7 @@ jobs:
 
       - name: deps fetch dependencies
         run:
-          go run github.com/piot/deps/src/deps@main fetch -m clone -t src/deps
+          go run github.com/piot/deps/src/deps@main fetch --dev
 
       - name: cmake generate cache
         run: |
